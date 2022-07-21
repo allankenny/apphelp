@@ -1,4 +1,4 @@
-import { Button as NativeBaseButton, IButtonProps, Heading } from 'native-base';
+import { Button as NativeBaseButton, IButtonProps, Heading, VStack } from 'native-base';
 type Prpos = IButtonProps & {
   title: string;
 }

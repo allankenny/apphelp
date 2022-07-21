@@ -2,7 +2,7 @@ import { Box, Circle, HStack, Text, useTheme, VStack, Pressable, IPressableProps
 import {ClockAfternoon, Hourglass, CircleWavyCheck} from 'phosphor-react-native';
 export type OrderProps = {
   id: string;
-  patrimory: string;
+  patrimony: string;
   when: string;
   status: 'open' | 'closed';
 };
@@ -25,7 +25,7 @@ export function Order( {data, ...rest}: Props) {
         <Box h='full' w={2} bg={statusColor} />
         <VStack flex={1} my={5} ml={5}>
           <Text color='gray.200'>
-            Patrimônio: {data.patrimory}
+            Patrimônio: {data.patrimony}
           </Text>
 
           <HStack>
