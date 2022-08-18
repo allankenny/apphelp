@@ -1,7 +1,7 @@
 import { useState } from "react";
 import auth from "@react-native-firebase/auth"
 import { Alert } from "react-native";
-import { VStack, Heading, Icon, useTheme} from "native-base";
+import { VStack, Heading, Icon, Text, useTheme} from "native-base";
 import Logo from '../assets/logo_primary.svg'
 import { Input } from '../components/Input';
 import { Button } from '../components/Button';
@@ -60,6 +60,10 @@ export function SingIn(){
         onPress={handleSingIn}
         isLoading={isLoading}
       />
+      
+      <Text mt={5} color='white' textAlign='right'>
+        Não tenho cadastro?
+      </Text>
     </VStack>
   )
 }
